@@ -2,7 +2,7 @@ Introduction
 ---
 When testing systems that operate using data in JSON format (REST APIs) there is often a need to compare JSON documents (or JSON objects).
 Strict comparison is not always the best approach:
-- test data might not be interested in every single field in the actual data
+- test data might not contain every single field present in the actual data
 - actual data might include values that cannot be used for comparison, i.e.: ids, timestamps, etc.
 
 Common solutions to this problem are:
@@ -112,3 +112,7 @@ Dependencies
 ---
 - [Jackson](https://github.com/FasterXML/jackson)
 - [AssertJ](https://assertj.github.io/doc/)
+
+Credits
+---
+I wrote this code while working with Rob Bygrave, and it ended up being merged into his awesome [eBean](https://ebean.io/) project. If you happen to use eBean for persistence and testing, the above functionality is already covered in eBean's test utilities. 
